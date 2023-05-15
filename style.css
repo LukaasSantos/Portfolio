@@ -1,0 +1,34 @@
+:root {
+    --base1-color: #633DF9;
+    --base2-color: #E5FD53;
+    --base3-color: #B853FC;
+    --base4-color: #7A28B0;
+    --grad1-color: linear-gradient(296.82deg, #E5FD53 0%, rgba(229, 253, 83, 0.89) 100%);
+    --branco-color: #FFFFFF;
+    --poppins-font: 'Poppins', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+}
+#home {
+    background-color: var(--base4-color);
+    font-family: var(--roboto-font)
+}
+
+#aboutme {
+    background-color: var(--branco-color);
+}
+
+#compet {
+    background-color: var(--base2-color) ;
+}
+
+#projetos {
+    background-color: var(--base4-color);
+}
+
+#falecomigo {
+    background-color: var(--base3-color) ;
+}
+
+#footer {
+    background-color: var(--base3-color);
+}

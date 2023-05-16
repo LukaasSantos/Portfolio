@@ -8,11 +8,33 @@
     --poppins-font: 'Poppins', sans-serif;
     --roboto-font: 'Roboto', sans-serif;
 }
+/* home */
 #home {
+    background-image: url("images/Group 6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: var(--base4-color);
-    font-family: var(--roboto-font)
+    font-family: var(--roboto-font);
 }
 
+/* #logo {
+    margin-top: 65px;
+    margin-right: 200px;
+    float: right;
+    width: 550px;
+    height: 550px;
+    background-color: var(--base2-color);
+} */
+
+
+
+
+
+
+
+
+
+/* about me*/
 #aboutme {
     background-color: var(--branco-color);
 }

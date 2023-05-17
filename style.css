@@ -16,7 +16,6 @@
 /* home */
 #home {
 background-color: var(--base4-color);
-
 }
 
 .logo {
@@ -28,7 +27,8 @@ background-color: var(--base4-color);
 }
 
 .logo .titulo {
-    margin: auto;
+    display: block  ;
+    margin-top: 50px;
     font-family: var(--roboto700-font);
     font-size: 48px;
     font-weight: bold;

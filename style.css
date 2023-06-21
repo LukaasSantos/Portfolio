@@ -17,8 +17,25 @@
 #home {
     background-color: var(--base4-color);
     }
-
-/* header */
+.retan1{
+    /* Rectangle 1 */
+        position: absolute;width: 45%;left: -8px;top: -8px;height: 20%;border: 8px solid #FFFFFF;} 
+.retan2{
+    /* Rectangle 2 */
+        position: absolute;width: 50%;left: -8px;top: -8px;height: 22.5%;border: 8px solid #FFFFFF;}
+.retan3{
+    /* Rectangle 3 */
+        position: absolute;width: 95%;height: 20%;left: 326px;top: 322px;border: 8px solid #FFFFFF;}
+.retan4{
+    /* Rectangle 4 */
+        position: absolute;width: 95%;height: 20%;left: 351px;top: 355px;border: 8px solid #FFFFFF;}
+.retan5{
+    /* Rectangle 5 */
+        position: absolute;width: 50%;height: 20%;left: -8px;top: 620px;border: 8px solid #FFFFFF;}
+.retan6{
+    /* Rectangle 6 */
+        position: absolute;width: 60%;height: 20.5%;left: -8px;top: 650px;border: 8px solid #FFFFFF;}
+    
 .logo {
     width: 100%;
     /* margin-top: 25%; */
@@ -27,46 +44,34 @@
     margin-top: 25%;
     height: 30em;
 } 
-/* visibility: hidden;
-    usar para os quadrados na tela
-*/
-
 .logo_text {
     padding-top: 25%;
+    margin-left: 5px;
 }
-
 .logo .titulo {
     margin: auto;
     font-family: var(--roboto700-font);
-    font-size: 64px;
+    font-size: 56px;
     font-weight: bold;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 .logo .subtitulo {
     font-size: 16px;
 }
-
-.retan1{
-    /* Rectangle 1 */
-    box-sizing: border-box;position: absolute;width: 45%;height: 20%;border: 10px solid #FFFFFF;} 
-.retan2{
-    /* Rectangle 2 */
-    box-sizing: border-box;position: absolute;width: 50%;height: 22.5%;border: 10px solid #FFFFFF;}
-.retan3{
-    /* Rectangle 3 */
-box-sizing: border-box;position: absolute;width: 15%;height: 20%;left: 326px;top: 322px;border: 10px solid #FFFFFF;}
-.retan4{
-    /* Rectangle 4 */
-box-sizing: border-box;position: absolute;width: 15%;height: 20%;left: 351px;top: 383px;border: 10px solid #FFFFFF;}
-
-
-
-
+/* ajusta levemente o texto da logo */
+@media (max-width: 413px) {
+    .logo_text {
+        padding-top: 30%;
+    }
+}
 
 /* desktop */
 @media (min-width: 767px) {
+    .retan1{position: absolute;left: -8px;top: -8px;width: 20%;height: 30%;border: 8px solid #FFFFFF;} 
+    .retan2{position: absolute;left: -8px;top: 37%;width: 4%;height: 50%;border: 8px solid #FFFFFF;}
+    .retan3{position: absolute;left: -8px;top: 95%;width: 30%;height: 20%;border: 8px solid #FFFFFF;}
+    .retan4, .retan5, .retan6 {visibility: hidden;} 
     .logo {
         width: 33%;
         height: 30em;
@@ -75,20 +80,8 @@ box-sizing: border-box;position: absolute;width: 15%;height: 20%;left: 351px;top
         float: right;
         background-color: var(--base2-color);
         color: var(--base4-color);
-     }
-
-     .retan1{
-        /* Rectangle 1 */
-            position: absolute;left: -8px;top: -8px;width: 20%;height: 30%;border: 8px solid #FFFFFF;} 
-    .retan2{
-        /* Rectangle 2 */
-            position: absolute;left: -8px;top: 37%;width: 4%;height: 50%;border: 8px solid #FFFFFF;}
-    .retan3{
-        /* Rectangle 3 */
-            position: absolute;left: -8px;top: 95%;width: 30%;height: 20%;border: 8px solid #FFFFFF;}
-
-    
-     .back_logo {
+        } 
+    .back_logo {
         position: absolute;
         right: 0.5%;
         width: 32.5%;
@@ -97,43 +90,28 @@ box-sizing: border-box;position: absolute;width: 15%;height: 20%;left: 351px;top
         margin-right: 18%;
         float: right;
         border: 10px solid #FFFFFF;
-     }
-
-     .logo .titulo {
-     
     }
-
     .logo_text {
         /* arrumar posição do texto */
-        margin-left: 40px;
+        margin-right: 10px;
+        margin-top: 60px;
+        text-align: end;
     }
-
-     /* .retan1, .retan2, .retan3, */ .retan4 {
-        visibility: hidden;
-     } 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* about me*/
 #aboutme {
     background-color: var(--branco-color);
 }
+
+
+
+
+
+
+
+
+
 
 #compet {
     background-color: var(--base2-color) ;

@@ -99,6 +99,7 @@
 }
 
 /* about me*/
+
 #aboutme {
     background-color: var(--branco-color);
 }
@@ -107,7 +108,7 @@
 .rtn9 {position: absolute;width: 10%; height: 9%; left: 80%; top: 90% ;border: 6px solid var(--base3-color);border-bottom: 0px;}
 .rtn10 {position: absolute;width: 100%; height: 8%; left: 66%; border: 6px solid var(--base3-color); border-top: 0px;}
 
-ul {
+.ul_nav {
     display: flex;
     justify-content: center;
 }
@@ -186,10 +187,78 @@ p {
     .perfil {display: none;}
 }
 
-
+/* competencias */
 #compet {
     background-color: var(--base2-color) ;
 }
+
+.compet_titulo {
+    margin: auto;
+    font-family: var(--poppins-font);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--base4-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 40px;
+}
+
+.compet_cards {
+    background-color: var(--base4-color);
+    width: 100%;
+    height: 600px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.50));
+}
+
+.ul_cards {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.cards_pics {
+    padding: 30px;
+    width: 20%;
+    height: 55px;
+    background-color: var(--base2-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*desktop */
+
+@media (min-width: 767px) {
+    .nav_link {display: block;}
+
+    .compet_titulo {
+        font-size: 44px;
+    }
+
+    .compet_cards {
+        height: 450px;
+    }
+
+    .ul_cards {
+        justify-content: space-between;
+        column-gap: 20%;
+    }
+    .cards_pics {
+        width: 10%;
+        margin: auto 40px;
+    }
+
+
+
+}
+
+
+
+
+
+
 
 #projetos {
     background-color: var(--base4-color);

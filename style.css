@@ -74,7 +74,7 @@
     .logo {
         width: 33%;
         height: 30em;
-        margin-top: 8%;
+        margin-top: 5%;
         margin-right: 20%;
         float: right;
         background-color: var(--base2-color);
@@ -85,7 +85,7 @@
         right: 0.5%;
         width: 32.5%;
         height: 29em;
-        margin-top: 9%;
+        margin-top: 6%;
         margin-right: 18%;
         float: right;
         border: 10px solid #FFFFFF;
@@ -108,7 +108,7 @@
 .rtn9 {position: absolute;width: 10%; height: 9%; left: 80%; top: 90% ;border: 6px solid var(--base3-color);border-bottom: 0px;}
 .rtn10 {position: absolute;width: 100%; height: 8%; left: 66%; border: 6px solid var(--base3-color); border-top: 0px;}
 
-.ul_nav {
+.ul_nav{
     display: flex;
     justify-content: center;
 }
@@ -173,7 +173,8 @@ p {
         column-gap: -20px;
     }
     .sobre_aside {
-        width: 20%;
+        width: 30%;
+        height: 2em;
     }
     .sobre_titulo {
         text-align: center;
@@ -202,14 +203,13 @@ p {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 40px;
 }
-
 .compet_cards {
     background-color: var(--base4-color);
     width: 100%;
-    height: 600px;
+    height: 38em;
+    margin-top: 40px;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.50));
 }
-
 .ul_cards {
     padding: 30px;
     display: flex;
@@ -218,7 +218,6 @@ p {
     align-items: center;
     row-gap: 20px;
 }
-
 .cards_pics {
     padding: 30px;
     width: 20%;
@@ -232,37 +231,82 @@ p {
 
 @media (min-width: 767px) {
     .nav_link {display: block;}
-
+    .link_compet {
+        color: var(--base4-color);
+    }
+    .link_compet:hover {
+        border-bottom: 4px solid var(--base4-color);
+    }
     .compet_titulo {
         font-size: 44px;
     }
-
     .compet_cards {
-        height: 450px;
+        margin-top: 3em;
+        height: 20em;
     }
-
     .ul_cards {
         justify-content: space-between;
-        column-gap: 20%;
+        column-gap: 10%;
     }
     .cards_pics {
         width: 10%;
-        margin: auto 40px;
+        margin: auto 15px;
     }
-
-
-
 }
 
-
-
-
-
-
+/* projetos */
 
 #projetos {
     background-color: var(--base4-color);
 }
+.proj_titulo {
+    font-size: 24px;
+    color: var(--base2-color);
+    font-weight: 900;
+    font-family: var(--poppins-font);
+    text-align: end;
+    padding: 30px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.50));
+}
+.proj_img {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.proj_imgdesktop {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .proj_img {display: none;}
+    .proj_imgdesktop{
+        display: block;
+        width: 23%;
+        margin: auto 40px;
+    }
+
+    .link_proj {
+        color: var(--base2-color);
+    }
+    .link_proj:hover{
+        border-bottom: 4px solid var(--base2-color);
+    }
+    .proj_titulo {
+        padding: 20px 70px 20px 20px;
+        font-size: 36px;
+    }
+    .carrousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+
 
 #falecomigo {
     background-color: var(--base3-color) ;

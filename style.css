@@ -382,13 +382,6 @@ form {
         border-bottom: 4px solid var(--branco-color);
     }
 
-
-    form {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 33%;
-    }
-
 }
 
 
